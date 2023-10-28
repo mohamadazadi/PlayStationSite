@@ -1,0 +1,1150 @@
+body {
+
+    margin: 0;
+    padding: 0;
+}
+
+.mylogo {
+    background-color: black !important;
+    direction: rtl;
+}
+
+.mysonylogo {
+    color: white;
+    margin: -8px 8px;
+    font-family: initial;
+
+}
+
+.fixed-nav {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: #ffffff !important;
+}
+
+.dropdown a {
+    color: black;
+}
+
+.dropdown a:hover {
+    color: rgb(86, 179, 223);
+    transition: 1s;
+}
+
+.alldrpdn {
+    justify-content: center;
+    transition: height 0.3s ease;
+    top: 56px !important;
+
+}
+
+.dropdown {
+    margin-left: 30px;
+}
+
+.mydropdown5 {
+    width: 99vw;
+    left: -522px !important;
+}
+
+.mydropdown4 {
+    width: 99vw;
+    left: -400px !important;
+}
+
+.mydropdown3 {
+    width: 99vw;
+    left: -311px !important;
+}
+
+.mydropdown2 {
+    width: 99vw;
+    left: -222px !important;
+}
+
+.mydropdown1 {
+    width: 99vw;
+    left: -113px !important;
+}
+
+.mydropdown6 {
+    width: 99vw;
+    left: -669px !important;
+}
+
+.mydropdown7 {
+    width: 99vw;
+    left: -773px !important;
+}
+
+.mydropdown8 {
+    width: 99vw;
+    left: -873px !important;
+}
+
+.show {
+    display: flex !important;
+    transition: 1s all;
+    flex-wrap: wrap;
+    animation: slowdp 0.5s ease-in;
+    border: none;
+
+
+}
+
+@keyframes slowdp {
+    0% {
+        transform: scaleY(.2);
+        transform-origin: 0% 0%;
+
+    }
+
+    100% {
+        transform: scaleY(1);
+        transform-origin: 0% 0%;
+
+    }
+}
+
+.alldrpdn>li {
+    width: 11vw;
+    height: 15vh;
+    padding-top: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    margin-bottom: 30px;
+}
+
+.alldrpdn>li:not(:last-child):hover {
+    box-shadow: 1px 1px 7px 0px;
+}
+
+.alldrpdn>li a:hover {
+    background-color: white !important;
+}
+
+.alldrpdn li:nth-child(4) {
+    flex-grow: 1;
+    width: 100%;
+    height: 3vw;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.myitem4 {
+    border-top: 1px solid #cccccc;
+}
+
+.myitem4 li {
+    display: inline;
+    padding-right: 30px;
+    box-shadow: none;
+}
+
+.myitem4 li {
+    list-style: circle;
+}
+
+.myitem4:hover {
+    background-color: white;
+}
+
+.myitem1 span,
+.myitem2 span,
+.myitem3 span,
+.myitem4 span {
+    display: block;
+}
+
+/* .myitem1{
+    position: absolute;
+    display: flex;
+   
+   left: 0px;
+}
+.myitem2{
+    position: absolute;
+    display: flex;
+  
+   left: 40px;
+}
+.myitem3{
+    position: absolute;
+    display: flex;
+
+   left: 70px;
+} */
+
+
+
+.personalcarouselind button[type=button] {
+
+    padding: 5% 9%;
+    transition: 0.5s all;
+}
+
+.personalcarouselind2 button[type=button] {
+
+    padding: 8% 9%;
+    transition: 0.5s all;
+}
+
+
+.active[type=button] {
+    border: 3px solid #0072ce;
+    border-style: ridge;
+    width: 10px;
+}
+
+.personalcarouselind button[type=button]:hover {
+    transform: translateY(-10%);
+    opacity: 1;
+    box-shadow: 0px 10px 16px 0px;
+    border: 1px solid rgb(236, 236, 243);
+    outline: 1px solid blue;
+}
+
+.personalcarouselind button[type=button]:first-of-type {
+    background: url('../Images/caroousel-button-spider.webp') center no-repeat;
+    background-size: cover;
+    border-radius: 15%;
+
+}
+
+.personalcarouselind button[type=button]:nth-of-type(2) {
+    background: url('../Images/Overwatch-2-S7-keyart-01-en-03oct23-button.webp') center no-repeat;
+    background-size: cover;
+    border-radius: 15%;
+}
+
+.personalcarouselind button[type=button]:nth-of-type(3) {
+    background: url('../Images/sony-core-keyart-01-en-05sep23-button.webp') center no-repeat;
+    background-size: cover;
+    border-radius: 15%;
+
+}
+
+.personalcarouselind button[type=button]:nth-of-type(4) {
+    background: url('../Images/Roblox-keyart-en-01-02oct23-button.webp') center no-repeat;
+    background-size: cover;
+    border-radius: 15%;
+
+}
+
+.personalcarouselind button[type=button]:nth-of-type(5) {
+    background: url('../Images/Horizon-forbidden-west-collectors-edition-button-carousel-img.webp') center no-repeat;
+    background-size: cover;
+    border-radius: 15%;
+
+}
+
+.personalcarouselind button[type=button]:nth-of-type(6) {
+    background: url('../Images/honkai-star-rail-keyart-01-12sep23$en-button.webp') center no-repeat;
+    background-size: cover;
+    border-radius: 15%;
+
+}
+
+.personalcarouselind button[type=button]:last-of-type {
+    background: url('../Images/NBA-2K24-S2-keyart-en-01-02oct23-button.webp') center no-repeat;
+    background-size: cover;
+    border-radius: 15%;
+
+}
+
+.personalcarouselind,
+.personalcarouselind2 {
+    position: relative;
+    width: auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-item video {
+    height: fit-content;
+    position: absolute;
+}
+
+
+.about-my-view {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 30%;
+    left: 100px;
+    align-items: center;
+    top: 0px;
+    text-align: left;
+    transition: 1s all;
+    align-content: center;
+}
+
+
+
+.about-my-view img {
+    width: 50%;
+    height: fit-content;
+}
+
+.about-my-view button {
+    background-color: rgb(229, 225, 218);
+    border-radius: 19px;
+    width: 9vw;
+    font-size: 1vw;
+    margin-left: 10px;
+}
+
+.about-my-view button:hover {
+    outline: 3px solid rgb(254, 254, 246);
+    border: 1px solid #252550;
+}
+
+@media (max-width:768px) {
+    .about-my-view {
+        width: 100%;
+        left: 0px;
+        align-items: center;
+        bottom: -50%;
+        text-align: center;
+        transition: 1s all;
+        font-size: 3vw;
+        justify-content: center;
+    }
+
+    .about-my-view button {
+        background-color: rgb(229, 225, 218);
+        border-radius: 19px;
+        width: 16vw;
+        font-size: 2vw;
+    }
+
+    .about-my-view img {
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+.carousel-two {
+    direction: rtl;
+    margin-top: 20px;
+    height: 700px;
+    align-items: center;
+}
+
+.carousel-one {
+    height: 700px;
+}
+
+
+.personalsize1 {
+    height: 100%;
+}
+
+.personalsizeimg {
+    height: 100%;
+}
+
+.personalsize {
+    width: 100%;
+    height: 100%;
+}
+
+.personalsize img {
+    max-width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 150px;
+}
+
+.personalcarouselind2 button {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.personalcarouselind2 span {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0px;
+    text-indent: 0px;
+    font-size: 16px;
+}
+
+.personalcarouselind2 img {
+    width: 80%;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+
+    align-items: center;
+}
+
+.personalcarouselind2 img:nth-of-type(4) {
+    height: 20px;
+    top: -20px !important;
+
+}
+
+.personalcarouselind2 button[type=button]:first-of-type {
+    /* background: url('assets/Images/second-carousel/dualsense-collection-button.webp') top no-repeat;
+    background-size: contain; */
+    border-radius: 15%;
+    /* font-size: 10px; */
+
+}
+
+
+.personalcarouselind2 button[type=button]:nth-of-type(2) {
+    /* background: url('assets/Images/second-carousel/3d-pulse-headset-range-button.webp') center no-repeat;
+    background-size: contain; */
+    border-radius: 15%;
+    z-index: 10;
+    color: black;
+}
+
+.personalcarouselind2 button[type=button]:nth-of-type(3) {
+    /* background: url('assets/Images/second-carousel/DualSense-Edge-image-button.webp') center no-repeat;
+    background-size: contain; */
+    border-radius: 15%;
+
+}
+
+.personalcarouselind2 button[type=button]:nth-of-type(4) {
+    /* background: url('assets/Images/second-carousel/hd-camera-square-image-button.webp') center no-repeat;
+    background-size: contain; */
+    border-radius: 15%;
+
+}
+
+.personalcarouselind2 button[type=button]:nth-of-type(5) {
+    /* background: url('assets/Images/second-carousel/Media-Remote-square-image-button.webp') center no-repeat;
+    background-size: contain; */
+    border-radius: 15%;
+
+}
+
+.personalcarouselind2 button[type=button]:nth-of-type(6) {
+    /* background: url('assets/Images/second-carousel/playstation-5-horizontal-product-button.webp') center no-repeat;
+    background-size: contain; */
+    border-radius: 15%;
+
+}
+
+.personalcarouselind2 button[type=button]:last-of-type {
+    /* background: url('assets/Images/second-carousel/ps5-console-cover-range-image-button.webp') center no-repeat;
+    background-size: contain; */
+    border-radius: 15%;
+
+}
+
+.personalcarouselind2 button[type=button]:hover {
+    opacity: 1;
+}
+
+.secondAbout {
+    position: absolute;
+    left: 10%;
+    top: 33%;
+    display: block;
+    width: 34%;
+    text-align: center;
+
+}
+
+
+.carousel-container {
+    width: 100%;
+    height: 45vw;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    background: url('../Images/third-carousel/play-play-play-ps-plus-background-carousel-3.webp') center;
+}
+
+.carousel-slide {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-card {
+    flex: 0 0 auto;
+    width: 63vw;
+    height: 100%;
+    padding: 10;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.aboutCards {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 41%;
+    left: 0px;
+    justify-content: center;
+    color: white;
+}
+
+.aboutCards h6 {
+    width: 50%;
+    padding: 7px;
+    color: #333;
+}
+
+
+.orderButton {
+    position: absolute;
+    left: 43%;
+    bottom: 5px;
+}
+
+.carousel-card img {
+    width: 100%;
+    border-radius: 20px;
+    filter: brightness(70%)
+}
+
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-button.left {
+    left: 10px;
+}
+
+.carousel-button.right {
+    right: 10px;
+}
+
+
+
+.mythirdcarousel {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 5px;
+    transition: background-color 0.5s ease-in-out;
+    position: absolute;
+}
+
+.mythirdcarousel.active {
+    background-color: #333;
+}
+
+.fullint img {
+    width: 100%;
+}
+
+.fullint {
+    width: 100%;
+    margin: 0px 0px;
+    position: relative;
+}
+
+.introint {
+    position: absolute;
+    position: absolute;
+    display: flex;
+    top: 41%;
+    width: 31%;
+    flex-wrap: wrap;
+    color: white;
+    left: 5%;
+
+}
+
+.introint button {
+    width: 9vw;
+    font-size: 1vw;
+}
+
+.introint button:hover {
+    outline: 3px solid rgb(254, 254, 246);
+    border: 1px solid #252550;
+}
+
+@media (max-width:1024px) {
+    .introint {
+        position: absolute;
+        position: absolute;
+        display: flex;
+        top: 64%;
+        width: 100%;
+        flex-wrap: wrap;
+        left: 0px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .introint button {
+        width: 14vw;
+        font-size: 2vw;
+    }
+}
+
+.introint button {
+    border-radius: 20px;
+}
+
+.introint button {
+    margin-left: 10px;
+}
+
+.top-new-games {
+    margin: 0px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.top-new-games h1 {
+    padding: 10px;
+    width: 100%;
+    text-align: start;
+    margin: 20px 0px;
+
+}
+
+.cardgamesContainer img {
+    width: 100%;
+    border-radius: 10px;
+    padding-bottom: 9px;
+    filter: brightness(70%);
+}
+
+.cardGames:hover img {
+    filter: brightness(100%);
+    transform: scale(1.04);
+    transition: 1s all;
+    transition-delay: 0.5s;
+}
+
+
+.cardGames {
+    padding: 10px;
+    text-align: left;
+    margin: 0px 0px;
+    background-color: black;
+}
+
+.cardGames a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.unknowm {
+    padding: 10px;
+    background-color: white;
+    color: #333;
+    border-radius: 20px;
+}
+
+.changefunction {
+    background-color: #333;
+    display: inline;
+    padding: 18px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: sticky;
+    z-index: 2;
+    top: 70px;
+}
+
+.usseless {
+    padding: 10px;
+}
+
+.usseless:hover {
+    color: #2a78bb;
+    transition: all .4s;
+}
+
+.usseless:active {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+@media (max-width:567px) {
+    .cardgamesContainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+.myrelative {
+    margin: 20px 0;
+    filter: brightness(90%);
+    animation: myanim 2s ease-in;
+}
+
+.mytransform {
+    display: none;
+    transition: 3s ease-in;
+
+}
+
+@keyframes myanim {
+    0% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.threeGamesNews img {
+    width: 100%;
+}
+
+.threeGamesNews {
+    position: relative;
+}
+
+.threeGamesint {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: wheat;
+    line-height: 3;
+}
+
+.threeGamesint button {
+    padding: 10px;
+    border-radius: 20px;
+    width: 170px;
+}
+
+.threeGamesint button:hover {
+    outline: 3px solid rgb(254, 254, 246);
+    border: 1px solid #252550;
+}
+
+.gamesImages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.gamesImages img {
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 22px 6px;
+}
+
+.gamesImages img:hover {
+    transform: scale(1.04);
+    transition: 1s all;
+    transition-delay: 0.3s;
+}
+
+.gamesImages p {
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.allgamesImages {
+    background: linear-gradient(#252550, #252550, #252550);
+    box-shadow: 0px -33px 59px 34px #252550;
+    width: 100%;
+    margin: 0;
+}
+
+@media (max-width:768px) {
+    .threeGamesint {
+        position: absolute;
+        top: 24%;
+        left: 0%;
+        color: wheat;
+        line-height: 3;
+        text-align: center;
+    }
+}
+
+.justText {
+    padding: 60px 0px;
+    text-align: center;
+    background-color: #f5f7fa;
+
+}
+
+.forSale img {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.forSale img:hover {
+    transform: scale(1.02);
+    transition: .5s;
+    transition-delay: 0.3s;
+}
+
+.forsalepadd {
+    padding: 2% 10%;
+    display: flex;
+}
+
+.forsaleint {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    line-height: 3;
+
+}
+
+.forsaleint h2 {
+    width: 70%;
+    font-weight: 0;
+}
+
+.forsaleint p {
+    width: 80%;
+    line-height: 2;
+}
+
+.forsaleint button {
+    width: 133px;
+    border-radius: 30px;
+    background-color: #d53b00;
+}
+
+.forsaleint button:hover {
+    outline: 3px solid #d53b00;
+    border: 1px solid #d1d1db;
+}
+
+.forsaleint img {
+    width: 50%;
+}
+
+.bgshirtshop img {
+    width: 100%;
+    height: 60vw;
+}
+
+.myShop {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shirtShop {
+    position: relative;
+}
+
+.gearlogo {
+    position: absolute;
+    top: 9%;
+    left: 7%;
+}
+
+.gearlogo img {
+    width: 10%;
+}
+
+.introshop {
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    color: white;
+    font-size: 3vw;
+}
+
+.introshop h3 {
+
+    font-size: 3vw;
+}
+
+.introshop p {
+
+    font-size: 1vw;
+}
+
+.fourshirt {
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shirtbg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.5));
+    padding: 100px;
+    margin: 10px 10px;
+    width: 23%;
+    height: 24vw;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.shirtbg p {
+    width: 100%;
+}
+
+.shirtbg img {
+    width: 100%;
+}
+
+.lastbtn {
+    position: absolute;
+    bottom: 0%;
+    left: 45%;
+}
+
+@media (min-width:200px) and (max-width:1023px) {
+    .shirtbg {
+        width: 100%;
+        height: 100vw;
+    }
+
+    .bgshirtshop img {
+        width: 100%;
+        height: 480vw;
+    }
+
+    .fourshirt {
+        top: 10%;
+    }
+
+    .introshop {
+        top: 5%;
+    }
+
+    .gearlogo {
+        position: absolute;
+        top: 0%;
+        left: 7%;
+    }
+
+    .gearlogo img {
+        width: 20%;
+    }
+
+    .introshop h3 {
+
+        font-size: 3vw;
+    }
+
+    .introshop p {
+
+        font-size: 2vw;
+    }
+
+    .lastbtn {
+        left: 35%;
+    }
+}
+
+@media (min-width:1023px) and (max-width:1223px) {
+    .bgshirtshop img {
+        width: 100%;
+        height: 143vw;
+    }
+
+    .shirtbg {
+        width: 48%;
+        height: 50vw;
+    }
+
+    .fourshirt {
+        top: 20%;
+    }
+
+    .introshop {
+        top: 15%;
+    }
+
+    .gearlogo {
+        position: absolute;
+        top: 0%;
+        left: 7%;
+    }
+
+    .gearlogo img {
+        width: 20%;
+    }
+
+    .introshop h3 {
+
+        font-size: 3vw;
+    }
+
+    .introshop p {
+
+        font-size: 2vw;
+    }
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f5f7fa;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 70px;
+}
+
+.socialmedia h3 {
+    width: 100%;
+    flex-grow: 10;
+}
+
+.socialmedia img {
+    width: 8%;
+    margin-top: 50px;
+    margin-right: 29px;
+}
+
+@media (min-width:200px) and (max-width:1023px) {
+
+    .socialmedia img {
+        width: 38%;
+        transition: 0.6 all;
+    }
+}
+
+.socialmedia img:hover {
+    transform: scale(1.05);
+
+    transition: 0.6s all;
+}
+
+.bluedesign {
+    background-color: #00439c;
+}
+
+.morepaddingfoot {
+    padding: 0px 60px;
+}
+
+.footerlogo h1::before {
+    content: url("../Images/icons8-playstation-footer.png");
+    font-family: 'Arial Narrow Bold';
+
+}
+
+.footerlogo h1 {
+    color: white;
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+
+.ulitems {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-evenly;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.sixolfoot li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    line-height: 2;
+    cursor: default;
+}
+
+.loadingfoot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.logoSony::before {
+    content: url("../Images/sonyloading1.jpg");
+}
+
+.logoSony h3 {
+    display: inline-block;
+    width: 9%;
+    font-size: 1.5rem;
+}
+.langfoot{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.aboutsony li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    padding: 0px 10px 0px;
+}
+.aboutsony li a{
+   text-decoration: none;
+   color: white;
+}
+.aboutsony li:not(:first-child){
+    border-left: 1px solid white;
+}
+.aboutsony li a:hover{
+color: wheat;
+}
+.MobileFooter{
+    width: 100%;
+}
+.MobileFooter .card{
+    width: 100%;
+    background-color: #00439c;
+    border: none;
+}
+.MobileFooter li{
+ color: white;
+ list-style: none;
+}
+.MobileFooter button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    color: white;
+
+}
+.MobileFooter button:hover{
+   color: white;
+   border-top: 1px solid white;
+}
