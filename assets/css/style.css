@@ -357,7 +357,6 @@ body {
 
 .personalsize img {
     max-width: 50%;
-    height: 60%;
     position: absolute;
     top: 150px;
 }
@@ -452,11 +451,69 @@ body {
 .secondAbout {
     position: absolute;
     left: 10%;
-    top: 33%;
+    top: 25%;
     display: block;
     width: 34%;
     text-align: center;
 
+}
+
+@media (max-width:1024px){
+    .secondAbout {
+        position: absolute;
+        left: 0%;
+        top: 71%;
+        display: block;
+        width: 100%;
+        text-align: center;
+    font-size: 2vw;
+    }
+    .secondAbout p {
+    font-size: 2vw !important;
+    }
+    .carousel-two {
+        direction: rtl;
+        height: 81vw;
+      }
+
+    .personalsize img {
+        max-width: 100%;
+        position: absolute;
+        top: 0px;
+    }
+    .secondAbout h4{
+        width: 100%;
+        left: 0px;
+        font-size: 3vw !important;
+    }
+}
+@media (min-width:300px) and (max-width:764px){
+    .secondAbout {
+        position: absolute;
+        left: 0%;
+        top: 56%;
+        display: block;
+        width: 100%;
+        text-align: center;
+    
+    }
+    .carousel-two {
+        direction: rtl;
+        height: 89vw;
+      }
+    .secondAbout p{
+        font-size: 2.5vw !important;
+    }
+    .personalsize img {
+        max-width: 100%;
+        position: absolute;
+        top: 0px;
+    }
+    .secondAbout h4{
+        width: 100%;
+        left: 0px;
+        font-size: 4.5vw !important;
+    }
 }
 
 

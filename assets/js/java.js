@@ -13,7 +13,7 @@ carouselSlide.style.transform = `translateX(${-cardWidth}px)`;
 
 const slideLeft = () => {
   carouselSlide.style.transition = "transform 2s ease-in-out";
-  carouselSlide.style.transform = `translateX(${-cardWidth * 3}px)`;
+  carouselSlide.style.transform = `translateX(${-cardWidth * 8}px)`;
   setTimeout(() => {
     carouselSlide.style.transition = "none";
     carouselSlide.appendChild(carouselCards[0]);
