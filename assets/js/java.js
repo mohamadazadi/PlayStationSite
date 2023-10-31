@@ -124,9 +124,96 @@ function changePageTwo() {
 //   $(this).animate({ opacity: 0.5 });
 
 // });
-$(".dropdown").click(function() {
-  $(".dropdown-toggle").css("transform", "translateY(-20px)");
-});
-$(".dropdown").click(function() {
-  $(".dropdown-toggle").css("transform", "translateY(0px)");
-});
+// $(".dropdown").click(function() {
+//   $(".dropdown-toggle").css("transform", "translateY(-20px)");
+// });
+// $(".dropdown").click(function() {
+//   $(".dropdown-toggle").css("transform", "translateY(0px)");
+// });
+
+// function showSearchbar() {
+//   var search = document.getElementById("searchbar");
+//   var inputsearch = document.getElementById("searchinput");
+//   var allsite = document.getElementById("allmarginright");
+//   search.onclick = function () {
+//     if
+//       (inputsearch.style.display === "none") {
+//       inputsearch.style.display = "block";
+//       allsite.style.filter = "brightness(30%)"
+
+//     } else {
+//       inputsearch.style.display = "none";
+//       allsite.style.filter = ""
+//     }
+//   }
+//   //for hide when i click on site
+//   document.addEventListener("click", function (event) {
+//     var target = event.target;
+//     if (!search.contains(target)) {
+//       inputsearch.style.display = "none";
+//       allsite.style.filter = "";
+//     }
+//   });
+// }
+function showSearchbar() {
+  var search = document.getElementById("searchbar");
+  var inputsearch = document.getElementById("searchinput");
+  var allsite = document.getElementById("allmarginright");
+
+  search.addEventListener("click", function (event) {
+    if (inputsearch.style.display === "none" || inputsearch.style.display === "") {
+      inputsearch.style.display = "block";
+      allsite.style.filter = "brightness(30%)";
+    } else {
+      inputsearch.style.display = "none";
+      allsite.style.filter = "";
+    }
+    event.stopPropagation();
+  });
+
+  inputsearch.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+
+  document.addEventListener("click", function () {
+    if (inputsearch.style.display === "block") {
+      inputsearch.style.display = "none";
+      allsite.style.filter = "";
+    }
+  });
+}
+
+
+function sideNavBurger() {
+  var burgurBtn = document.getElementById("burgerbtnnav");
+  burgurBtn.onclick = function () {
+    var navitems = document.getElementById("navbarSupportedContent");
+    if (navitems.style.display === "flex") {
+      navitems.style.display = "none"
+      document.getElementById("fullsidenav").style.marginRight = "0px"
+      document.getElementById("allmarginright").style.display = "block"
+    }
+    else {
+      navitems.style.display = "flex"
+      document.getElementById("fullsidenav").style.marginRight = "0px"
+      document.getElementById("allmarginright").style.display = "none"
+    }
+    transition = 1
+  }
+}
+
+
+function goNegative() {
+  var clicknega = document.getElementById("changenegative");
+  var changnega = document.getElementById("fanegative");
+  var showdiv= document.getElementById("collapseExample2")
+  clicknega.addEventListener("click", function () { 
+    if (showdiv.classList.contains("show")) {
+      changnega.innerHTML = " <i class='fa fa-minus'></i>"
+    }
+    else {
+      changnega.innerHTML = "<i class='fa fa-plus'></i>"
+    }
+  })
+}
+

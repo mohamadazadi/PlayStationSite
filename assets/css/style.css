@@ -84,7 +84,7 @@ body {
     left: -873px !important;
 }
 
-.show {
+.collapse .show {
     display: flex !important;
     transition: 1s all;
     flex-wrap: wrap;
@@ -136,7 +136,11 @@ body {
     justify-content: center;
 
 }
-
+@media (min-width:300px)and (max-width:769px){
+.alldrpdn .show {
+width: 100%;
+}
+}
 .myitem4 {
     border-top: 1px solid #cccccc;
 }
@@ -162,6 +166,34 @@ body {
     display: block;
 }
 
+.hidesearch{
+    display: none;
+    width: 100%;
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+    width: 30%;
+}
+.clickedsearch{
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    cursor: pointer;
+    border: 1px solid;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+.burgurbttn{
+    left: 0px;
+  position: absolute;
+  top: 23px;
+}
+
+#fullsidenav{
+    justify-content: center;
+}
 /* .myitem1{
     position: absolute;
     display: flex;
@@ -359,7 +391,6 @@ body {
 .personalsize img {
     max-width: 50%;
     position: absolute;
-    top: 150px;
 }
 
 .personalcarouselind2 button {
@@ -492,7 +523,7 @@ body {
     .secondAbout {
         position: absolute;
         left: 0%;
-        top: 56%;
+        top: 62%;
         display: block;
         width: 100%;
         text-align: center;
