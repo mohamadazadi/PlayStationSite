@@ -1190,6 +1190,13 @@ width: 100%;
     width: 9%;
     font-size: 1.5rem;
 }
+@media (max-width:399px){
+    .logoSony h3 {
+       
+        width: 100%;
+       
+    }
+}
 .langfoot{
     color: white;
     display: flex;
