@@ -203,17 +203,184 @@ function sideNavBurger() {
 }
 
 
+// function goNegative() {
+//   var clicknega = document.getElementById("changenegative");
+//   var changnega = document.getElementById("fanegative");
+//   var showdiv= document.getElementById("collapseExample2")
+//   clicknega.addEventListener("click", function () { 
+//     if (showdiv.classList.contains("show")) {
+//       changnega.innerHTML = " <i class='fa fa-minus'></i>"
+//     }
+//     else {
+//       changnega.innerHTML = "<i class='fa fa-plus'></i>"
+//     }
+//   })
+// }
+
+
+// function goNegative(){
+//   var clicknega = document.getElementById("changenegative");
+//   var changnega = document.getElementById("fanegative");
+//   clicknega.onclick =function(){
+//     changnega.classList.toggle()
+//   }
+// }
+
+
+
+
+
+// function goNegative() {
+//   var clicknega = document.getElementById("changenegative");
+//   var changnega = document.getElementById("fanegative");
+//   var changnega1 = document.getElementById("faplus");
+
+//   clicknega.addEventListener("click", function() {
+//     if (changnega.classList.contains("invis")||changnega1.classList.contains("invis")){
+//       changnega.classList.toggle("invis")
+//     }
+//   });
+// }
+
+// function goNegative() {
+//   var changnega = document.getElementById("faplus");
+//   var changnega1 = document.getElementById("fanegative");
+//   changnega.classList.toggle("invis");
+//   changnega1.classList.toggle("invis");
+// }
+// function goNegative() {
+//   var allmobilefooter = document.getElementById("footer");
+//   var colapsitem = allmobilefooter.querySelectorAll(".changenegative");
+//   var liItems = allmobilefooter.querySelectorAll(".collapse")
+//   for (var i = 0; i < colapsitem.length; i++) {
+
+//     if (liItems[i].display =="block") {
+//       colapsitem[i].innerHTML = " <i class='fa fa-minus invis' id='fanegative'></i>"
+//     }
+//     else {
+//       if (liItems[i].display =="none") {
+//       colapsitem[i].innerHTML = " <i class='fa fa-plus noinvis' id='faplus'></i>"
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+
+// function goNegative() {
+//   var allmobilefooter = document.getElementById("footer");
+//   var colapsitem = allmobilefooter.querySelectorAll(".changenegative");
+//   var liItems = allmobilefooter.querySelectorAll(".collapse");
+
+//   for (var i = 0; i < liItems.length; i++) {
+//     if (liItems[i].classList.contains("show")) {
+//       colapsitem[i].innerHTML = "-";
+//     }
+//     else {
+//       colapsitem[i].innerHTML = "+";
+//     }
+//   }
+// }
+
+// function goNegative() {
+//   var allmobilefooter = document.getElementById("footer");
+//   var colapsitem = allmobilefooter.querySelectorAll(".changenegative");
+//   var liItems = allmobilefooter.querySelectorAll(".collapse");
+//   var button = allmobilefooter.querySelectorAll(".mobilebtn");
+
+//   for (var i = 0; i < button.length; i++) {
+//     button[i].addEventListener("click", function() {
+//       for (var j ; j<liItems.length ; j++){
+//       if (liItems[j].classList.contains("show")) {
+//         colapsitem[j].textContent = "-";
+//       } else {
+//         colapsitem[j].textContent = "+";
+//       }
+//       }
+//     });
+//   }
+// }
+
 function goNegative() {
-  var clicknega = document.getElementById("changenegative");
-  var changnega = document.getElementById("fanegative");
-  var showdiv= document.getElementById("collapseExample2")
-  clicknega.addEventListener("click", function () { 
-    if (showdiv.classList.contains("show")) {
-      changnega.innerHTML = " <i class='fa fa-minus'></i>"
-    }
-    else {
-      changnega.innerHTML = "<i class='fa fa-plus'></i>"
-    }
-  })
+  var allmobilefooter = document.getElementById("footer");
+  var colapsitem = allmobilefooter.querySelectorAll(".changenegative");
+  var liItems = allmobilefooter.querySelectorAll(".collapse");
+  var button = allmobilefooter.querySelectorAll(".mobilebtn");
+  
+  for (var i = 0; i < button.length; i++) {
+    button[i].addEventListener("click", function() {
+     
+      for (var j = 0; j < liItems.length; j++) { 
+        var currentitem = this
+        for (var k =0 ; k<colapsitem.length ; k++){
+        if ( !button[j].classList.contains("collapsed")) {
+          
+          colapsitem[j].textContent = "-";
+     
+        } else {
+          colapsitem[j].textContent = "+";
+      
+        }}
+      }
+    });
+  }
 }
 
+
+
+
+// function goNegative() {
+//   var i = changnega.length;
+//   var j = changnega1.length;
+//   i++;
+//   j++;
+//    var changnega = document.getElementsByClassName("noinvis")[i];
+//  var changnega1 = document.getElementsByClassName("invis")[i];
+
+// changnega.classList.toggle("invis");
+//  changnega1.classList.toggle("invis"); }
+
+// function goNegative() {
+//   var changnega = document.querySelectorAll(".noinvis");
+//   var changnega1 = document.querySelectorAll(".invis");
+
+//   for (var i = 0; i < changnegas.length; i++) {
+//     changnega[i].classList.toggle("invis");
+//     changnega1[i].classList.toggle("invis");
+//   }
+// }
+
+// function goNegative() {
+//   var main = document.querySelectorAll(".changenegative")
+//   var changnegas = document.querySelectorAll(".noinvis");
+//   var changnega1s = document.querySelectorAll(".invis");
+// addEventListener("click",function(){
+//   for (var i = 0; i < main.length; i++) {
+//     changnegas[i].classList.toggle("invis");
+//     changnega1s[i].classList.toggle("noinvis");
+//   }})
+// }
+
+// function goNegative() {
+//   var ids = [{"faplus", "fanegative"},{"faplus1", "fanegative1"},{"faplus2", "fanegative2"},{"faplus3", "fanegative3"},{"faplus4", "fanegative4"},{"faplus5", "fanegative5"}];
+
+//   for (var i = 0; i < ids.length; i++) {
+//     var element = document.getElementById(ids[i]);
+//     element.classList.toggle("invis");
+//   }
+// }
+
+// function goNegative() {
+//   var ids = [["faplus", "fanegative"], ["faplus1", "fanegative1"], ["faplus2", "fanegative2"], ["faplus3", "fanegative3"], ["faplus4", "fanegative4"], ["faplus5", "fanegative5"]];
+
+//   for (var i = 0; i < ids.length; i++) {
+//     var element1 = document.getElementById(ids[i][0]);
+//     element1.classList.add("invis");
+
+//     var element2 = document.getElementById(ids[i][1]);
+//     element2.classList.remove("invis");
+//   }
+// }
