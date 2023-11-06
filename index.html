@@ -38,10 +38,16 @@
         <form>
             <div class="clickedsearch" type="search" id="searchbar" onclick="showSearchbar()">search<i
                     class="fa fa-search"></i></div>
-
-            <input class="form-control me-2 hidesearch" type="search" placeholder="Search" aria-label="Search"
-                id="searchinput">
-
+            <div class="mySearchInput" id="searchinput">
+                <button type="button"><i class="fa fa-search"></i></button>
+                <input class="form-control me-2" type="search" placeholder="Search playStation.com" aria-label="Search" autofocus="on">
+                    <select>
+                        <label>playStation.com</label>
+                        <option value="playstation.com">playStation.com</option>
+                      
+                        <option value="playstation.com">playStation.com</option>
+                    </select>
+            </div>
         </form>
         <div class="container-fluid" id="fullsidenav">
             <a class="navbar-brand" href="#"><img src="assets/Images/icons8-playstation-50.png"></a>
@@ -669,7 +675,7 @@
 
 
 
-        <div class="carousel-container d-none d-md-block">
+        <div class="carousel-container d-none d-lg-block">
             <div class="carousel-slide">
                 <div class="carousel-card">
                     <img
@@ -1149,7 +1155,7 @@
                                 onclick="goNegative()">
                                 <strong>About</strong>
                                 <div class="changenegative">
-                             +
+                                    +
                                 </div>
                             </button>
                         </p>
@@ -1218,7 +1224,7 @@
                     </div>
                     <div class="MobileFooter">
                         <p class="d-md-none d-lg-none d-xl-none d-xs-block d-sm-block">
-                            <button class="btn mobilebtn collapsed"   type="button" data-bs-toggle="collapse"
+                            <button class="btn mobilebtn collapsed" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample"
                                 onclick="goNegative()">
                                 <strong>Support</strong>
@@ -1297,7 +1303,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!--MobileFooter-->
 
 

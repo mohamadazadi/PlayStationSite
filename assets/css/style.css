@@ -5,6 +5,16 @@ body {
     overflow-x: hidden;
 }
 
+.allmarginright {
+    display: block !important;
+}
+
+@media (min-width:1024px) {
+    .allmarginright {
+        display: block !important;
+    }
+}
+
 .mylogo {
     background-color: black !important;
     direction: rtl;
@@ -15,6 +25,17 @@ body {
     margin: -8px 8px;
     font-family: initial;
 
+}
+.mysonylogo:hover{
+    color: #0072ce;
+}
+.mydprel{
+width: auto;
+}
+@media (max-width:1024px){
+    .mydprel{
+        width: 100%;
+        }
 }
 
 .fixed-nav {
@@ -90,8 +111,6 @@ body {
     flex-wrap: wrap;
     animation: slowdp 0.5s ease-in;
     border: none;
-
-
 }
 
 @keyframes slowdp {
@@ -105,6 +124,33 @@ body {
         transform: scaleY(1);
         transform-origin: 0% 0%;
 
+    }
+}
+
+@media (min-width:290px) and (max-width:1024px) {
+    #godp {
+        animation: slowdpmobile 0.5s ease-in forwards;
+    }
+
+    @keyframes slowdpmobile {
+        0% {
+            margin-left: 100%;
+
+        }
+
+        100% {
+            margin-left: 10%;
+
+        }
+    }
+
+    .collapse .show {
+        justify-content: flex-start;
+    }
+
+    .alldrpdn>li {
+        justify-content: end;
+        width: auto !important;
     }
 }
 
@@ -136,11 +182,13 @@ body {
     justify-content: center;
 
 }
-@media (min-width:300px)and (max-width:769px){
-.alldrpdn .show {
-width: 100%;
+
+@media (min-width:300px)and (max-width:769px) {
+    .alldrpdn .show {
+        width: 100%;
+    }
 }
-}
+
 .myitem4 {
     border-top: 1px solid #cccccc;
 }
@@ -166,7 +214,7 @@ width: 100%;
     display: block;
 }
 
-.hidesearch{
+.hidesearch {
     display: none;
     width: 100%;
     position: absolute;
@@ -174,26 +222,147 @@ width: 100%;
     bottom: -10px;
     width: 30%;
 }
-.clickedsearch{
-    position: absolute;
-    right: 10px;
-    bottom: 30px;
+
+.clickedsearch {
+
+    position: fixed;
+    top: 39px;
     cursor: pointer;
     border: 1px solid;
-    width: 100px;
+    width: 134px;
     display: flex;
     justify-content: space-between;
-  
-}
-.burgurbttn{
-    left: 0px;
-  position: absolute;
-  top: 23px;
+    padding: 3px 6px;
+    right: 0px;
+    cursor: pointer;
 }
 
-#fullsidenav{
+.clickedsearch svg {
+    margin-top: 4px !important;
+}
+
+.mySearchInput input {
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 20px 0px;
+    text-indent: 26px;
+    border-radius: 0px;
+    border: none;
+}
+
+.mySearchInput {
+    display: none;
+    animation: scalesearch 1s;
+    position: fixed;
+    top: 16%;
+    left: 0;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+@keyframes scalesearch {
+    0% {
+        transform: scale(.3);
+        transform-origin: 100% 100%;
+
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: 100% 0%;
+    }
+}
+
+.mySearchInput input:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.mySearchInput select {
+    width: 10%;
+
+    padding: 21px 0px;
+    z-index: 1000;
+    position: absolute;
+    top: 0px;
+    right: 50%;
+    text-align: center;
+    background-color: white;
+    border-right: 1px solid !important;
+    border: none;
+}
+
+.mySearchInput select:focus {
+    box-shadow: -3px 0px 9px -3px #11677b;
+    box-shadow: -1px 0px 9px 3px #115d7b;
+}
+
+.mySearchInput button {
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    top: 0;
+    padding: 21px 28px;
+    background-color: #0072ce;
+    border: none;
+
+}
+
+.mySearchInput button svg {
+    color: white;
+}
+
+@media (min-width:401px) and (max-width:967px) {
+    .mySearchInput {
+        top: 10%;
+    }
+
+    .mySearchInput select {
+        width: 20%;
+        top: 0px;
+        left: 0;
+    }
+
+    .mySearchInput input {
+        width: 79%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+}
+
+@media (max-width:400px) {
+    .mySearchInput {
+        top: 9%;
+    }
+
+    .mySearchInput select {
+        width: 100%;
+        top: 161%;
+        left: 0;
+    }
+
+    .mySearchInput input {
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        right: -8px;
+    }
+}
+
+
+.burgurbttn {
+    left: 0px;
+    position: absolute;
+    top: 23px;
+}
+
+#fullsidenav {
     justify-content: center;
 }
+
 /* .myitem1{
     position: absolute;
     display: flex;
@@ -490,7 +659,7 @@ width: 100%;
 
 }
 
-@media (max-width:1024px){
+@media (max-width:1024px) {
     .secondAbout {
         position: absolute;
         left: 0%;
@@ -498,28 +667,32 @@ width: 100%;
         display: block;
         width: 100%;
         text-align: center;
-    font-size: 2vw;
+        font-size: 2vw;
     }
+
     .secondAbout p {
-    font-size: 2vw !important;
+        font-size: 2vw !important;
     }
+
     .carousel-two {
         direction: rtl;
         height: 81vw;
-      }
+    }
 
     .personalsize img {
         max-width: 100%;
         position: absolute;
         top: 0px;
     }
-    .secondAbout h4{
+
+    .secondAbout h4 {
         width: 100%;
         left: 0px;
         font-size: 3vw !important;
     }
 }
-@media (min-width:300px) and (max-width:764px){
+
+@media (min-width:300px) and (max-width:764px) {
     .secondAbout {
         position: absolute;
         left: 0%;
@@ -527,21 +700,25 @@ width: 100%;
         display: block;
         width: 100%;
         text-align: center;
-    
+
     }
+
     .carousel-two {
         direction: rtl;
         height: 89vw;
-      }
-    .secondAbout p{
+    }
+
+    .secondAbout p {
         font-size: 2.5vw !important;
     }
+
     .personalsize img {
         max-width: 100%;
         position: absolute;
         top: 0px;
     }
-    .secondAbout h4{
+
+    .secondAbout h4 {
         width: 100%;
         left: 0px;
         font-size: 4.5vw !important;
@@ -689,6 +866,7 @@ width: 100%;
         left: 0px;
         justify-content: center;
         text-align: center;
+        font-size: 3vw;
     }
 
     .introint button {
@@ -728,10 +906,44 @@ width: 100%;
     filter: brightness(70%);
 }
 
+.cardGames {
+    animation: comeslow 1s ease-out;
+}
+
+@keyframes comeslow {
+    0% {
+        opacity: 0.1;
+        transform: scale(.9);
+    }
+
+    20% {
+        opacity: 0.5;
+    }
+
+    40% {
+        opacity: 0.6;
+
+    }
+
+    60% {
+        opacity: 0.7;
+
+    }
+
+    80% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .cardGames:hover img {
     filter: brightness(100%);
     transform: scale(1.04);
-    transition: 1s all;
+    transition: 1s all ease-in-out;
     transition-delay: 0.5s;
 }
 
@@ -1190,49 +1402,59 @@ width: 100%;
     width: 9%;
     font-size: 1.5rem;
 }
-@media (max-width:399px){
+
+@media (max-width:399px) {
     .logoSony h3 {
-       
+
         width: 100%;
-       
+
     }
 }
-.langfoot{
+
+.langfoot {
     color: white;
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     flex-wrap: wrap;
 }
-.aboutsony li{
+
+.aboutsony li {
     list-style: none;
     display: inline-block;
     color: white;
     padding: 0px 10px 0px;
 }
-.aboutsony li a{
-   text-decoration: none;
-   color: white;
+
+.aboutsony li a {
+    text-decoration: none;
+    color: white;
 }
-.aboutsony li:not(:first-child){
+
+.aboutsony li:not(:first-child) {
     border-left: 1px solid white;
 }
-.aboutsony li a:hover{
-color: wheat;
+
+.aboutsony li a:hover {
+    color: wheat;
 }
-.MobileFooter{
+
+.MobileFooter {
     width: 100%;
 }
-.MobileFooter .card{
+
+.MobileFooter .card {
     width: 100%;
     background-color: #00439c;
     border: none;
 }
-.MobileFooter li{
- color: white;
- list-style: none;
+
+.MobileFooter li {
+    color: white;
+    list-style: none;
 }
-.MobileFooter button{
+
+.MobileFooter button {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1240,10 +1462,23 @@ color: wheat;
     color: white;
 
 }
-.MobileFooter button:hover{
-   color: white;
-   border-top: 1px solid white;
+
+.MobileFooter button:hover {
+    color: white;
+    border: none;
+    border-top: 1px solid white;
 }
+
+.mobilebtn:active {
+    border: none !important;
+    border-top: 1px solid white;
+    color: white !important;
+}
+
+.changenegative {
+    font-size: 1.3rem;
+}
+
 /* .invis{
    display: none;
 } */

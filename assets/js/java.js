@@ -80,6 +80,37 @@ $('#pauseButton').click(function () {
 
 //  this.style.transition = 1
 // }
+// function changePage() {
+//   var topGames = document.getElementById('topGames');
+//   var newRelease = document.getElementById('newRelease');
+//   var topBt = document.getElementById('topBt');
+//   var newBt = document.getElementById('newBt');
+
+//   topGames.classList.remove('mytransform');
+//   newRelease.classList.add('mytransform');
+//   topBt.classList.remove('unknowm');
+//   newBt.classList.add('unknowm');
+//   newBt.classList.remove('usseless');
+//   topBt.classList.add('usseless');
+//   topGames.transition = '10000ms'
+//   newRelease.transition = '10000ms'
+// }
+
+// function changePageTwo() {
+//   var topGames = document.getElementById('topGames');
+//   var newRelease = document.getElementById('newRelease');
+//   var topBt = document.getElementById('topBt');
+//   var newBt = document.getElementById('newBt');
+
+//   newRelease.classList.remove('mytransform');
+//   topGames.classList.add('mytransform');
+//   newBt.classList.remove('unknowm');
+//   topBt.classList.add('unknowm');
+//   topBt.classList.remove('usseless');
+//   newBt.classList.add('usseless');
+//   newRelease.transition = '1000ms'
+//   topGames.transition = '3200ms'
+// }
 function changePage() {
   var topGames = document.getElementById('topGames');
   var newRelease = document.getElementById('newRelease');
@@ -92,6 +123,7 @@ function changePage() {
   newBt.classList.add('unknowm');
   newBt.classList.remove('usseless');
   topBt.classList.add('usseless');
+
 }
 
 function changePageTwo() {
@@ -107,9 +139,7 @@ function changePageTwo() {
   topBt.classList.remove('usseless');
   newBt.classList.add('usseless');
 
-  this.style.animation = '3s';
 }
-
 // $(document).ready(function(){
 //   $("#navbarDropdown").click(function(){
 //     $("#navbarDropdown").css("display", "flex").css("flex-wrap", "wrap");
@@ -163,7 +193,7 @@ function showSearchbar() {
   search.addEventListener("click", function (event) {
     if (inputsearch.style.display === "none" || inputsearch.style.display === "") {
       inputsearch.style.display = "block";
-      allsite.style.filter = "brightness(30%)";
+      allsite.style.filter = "brightness(20%)";
     } else {
       inputsearch.style.display = "none";
       allsite.style.filter = "";
@@ -318,15 +348,20 @@ function goNegative() {
         for (var k =0 ; k<colapsitem.length ; k++){
         if ( !button[j].classList.contains("collapsed")) {
           
-          colapsitem[j].textContent = "-";
+          colapsitem[j].style.transform = 'rotate(45deg)';
+          colapsitem[j].style.transition = '300ms';
+
      
         } else {
-          colapsitem[j].textContent = "+";
+          colapsitem[j].style.transform = 'rotate(0deg)';
+          colapsitem[j].style.transition = '300ms';
       
-        }}
+        }
+      }
       }
     });
   }
+  
 }
 
 
